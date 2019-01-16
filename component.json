@@ -1,0 +1,28 @@
+{
+  "title": "Simple trigger",
+  "description": "A component used to trigger integration flows without requesting data from any services.",
+  "triggers": {
+    "timer": {
+      "title": "Simple trigger",
+      "main": "./lib/trigger.js",
+      "type": "polling",
+      "metadata": {
+        "out": {
+          "type": "object",
+          "properties": {
+            "fireTime": {
+              "type": "string",
+              "format": "date-time",
+              "required": true
+            },
+            "lastPoll": {
+              "type": "string",
+              "format": "date-time",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
