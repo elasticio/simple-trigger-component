@@ -1,4 +1,3 @@
-const messages = require('elasticio-node').messages;
 const trigger = require('../../lib/trigger.js');
 const sinon = require('sinon');
 const chai = require('chai');
@@ -12,6 +11,9 @@ describe('Simple trigger', () => {
     beforeEach(() => {
         self = {
             emit: sinon.spy(),
+            logger: {
+                info: sinon.spy()
+            }
         };
     });
 
