@@ -1,6 +1,7 @@
 {
   "title": "Simple trigger",
   "description": "A component used to trigger integration flows without requesting data from any services.",
+  "buildType": "docker",
   "triggers": {
     "timer": {
       "title": "Simple trigger",
