@@ -1,6 +1,6 @@
 {
   "name": "simple-trigger-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A component used to trigger integration flows without requesting data from any services.",
   "engines": {
     "node": "8.6.0",
