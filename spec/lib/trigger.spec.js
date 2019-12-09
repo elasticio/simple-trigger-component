@@ -1,8 +1,10 @@
-const trigger = require('../../lib/trigger.js');
 const sinon = require('sinon');
 const chai = require('chai');
 chai.use(require('chai-datetime'));
-const expect = chai.expect;
+const { expect } = chai;
+const logger = require('@elastic.io/component-logger')();
+
+const trigger = require('../../lib/trigger.js');
 
 describe('Simple trigger', () => {
 
@@ -11,9 +13,7 @@ describe('Simple trigger', () => {
     beforeEach(() => {
         self = {
             emit: sinon.spy(),
-            logger: {
-                info: sinon.spy()
-            }
+            logger,
         };
     });
 

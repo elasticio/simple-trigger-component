@@ -16,6 +16,7 @@
     "elasticio-sailor-nodejs": "2.5.1"
   },
   "devDependencies": {
+    "@elastic.io/component-logger": "0.0.1",
     "chai": "4.2.0",
     "chai-datetime": "1.5.0",
     "mocha": "3.5.3",
