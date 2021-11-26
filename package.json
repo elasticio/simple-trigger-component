@@ -1,6 +1,5 @@
 {
   "name": "simple-trigger-component",
-  "version": "1.1.4",
   "description": "A component used to trigger integration flows without requesting data from any services.",
   "engines": {
     "node": "12",
@@ -13,7 +12,7 @@
   },
   "dependencies": {
     "elasticio-node": "0.0.8",
-    "elasticio-sailor-nodejs": "2.6.24"
+    "elasticio-sailor-nodejs": "2.6.26"
   },
   "devDependencies": {
     "@elastic.io/component-logger": "0.0.1",
