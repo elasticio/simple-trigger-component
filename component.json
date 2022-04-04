@@ -1,6 +1,5 @@
 {
   "title": "Simple trigger",
-  "version": "1.1.5",
   "description": "A component used to trigger integration flows without requesting data from any services.",
   "buildType": "docker",
   "triggers": {
