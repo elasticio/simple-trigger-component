@@ -1,3 +1,7 @@
+## 1.1.8 (November 11, 2022)
+
+* The same 1.1.7 release. Just to publish under greater version number
+
 ## 1.1.7 (November 04, 2022)
 
 * Update Sailor version to 2.7.1
