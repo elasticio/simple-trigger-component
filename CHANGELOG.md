@@ -1,3 +1,7 @@
+## 1.2.0 (June 30, 2023)
+
+* Added 'Start Time' and 'End Time' configuration fields to limit polling range
+
 ## 1.1.8 (November 11, 2022)
 
 * The same 1.1.7 release. Just to publish under greater version number
