@@ -1,6 +1,6 @@
 {
   "title": "Simple trigger",
-  "version": "1.1.8",
+  "version": "1.2.0-dev.1",
   "description": "A component used to trigger integration flows without requesting data from any services.",
   "buildType": "docker",
   "triggers": {
@@ -8,6 +8,22 @@
       "title": "Simple trigger",
       "main": "./lib/trigger.js",
       "type": "polling",
+      "fields": {
+        "startTime": {
+          "required": false,
+          "viewClass": "TextFieldView",
+          "label": "Start Time",
+          "placeholder": "1970-01-01T00:00:00.000Z",
+          "note": "Indicates the beginning time to start polling from, default 1970-01-01T00:00:00.000Z"
+        },
+        "endTime": {
+          "required": false,
+          "viewClass": "TextFieldView",
+          "label": "End Time",
+          "placeholder": "2022-02-24T04:31:00.000Z",
+          "note": "If provided, do not fetch records modified after this time (defaults to never)"
+        }
+      },
       "metadata": {
         "out": {
           "type": "object",
