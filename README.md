@@ -5,7 +5,7 @@
 * [Description](#description)
 * [Actions](#actions) 
 * [Triggers](#triggers) 
-  * [Webhook](#webhook)
+  * [Simple trigger](#simple-trigger)
 
 ## Description
 
