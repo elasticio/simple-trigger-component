@@ -1,3 +1,10 @@
+## 1.3.0 (March 05, 2026)
+
+* **Major Refactoring**: Removed `elasticio-node` (v0.0.9) dependency and moved message creation logic to local utilities using native `crypto.randomUUID()`.
+* **Modernized Runtime**: Updated Node.js engine from **18.x** to **24.x**.
+* **Dependency Upgrades**:
+    * `elasticio-sailor-nodejs`: 2.7.1 -> 2.7.8
+
 ## 1.2.0 (June 30, 2023)
 
 * Added 'Start Time' and 'End Time' configuration fields to limit polling range

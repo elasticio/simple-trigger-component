@@ -20,4 +20,17 @@ describe('Utils', async () => {
       }
     });
   });
+
+  describe('newMessageWithBody', () => {
+    it('should create a valid message object', () => {
+      const body = { foo: 'bar' };
+      const result = utils.newMessageWithBody(body);
+      expect(result).to.have.property('id');
+      expect(result.id).to.match(/^[0-9a-f-]{36}$/); // Basic UUID format check
+      expect(result).to.have.property('attachments').that.is.an('object').and.empty;
+      expect(result).to.have.property('body').that.deep.equals(body);
+      expect(result).to.have.property('headers').that.is.an('object').and.empty;
+      expect(result).to.have.property('metadata').that.is.an('object').and.empty;
+    });
+  });
 });
