@@ -29,7 +29,7 @@ describe('Simple trigger', async () => {
     const dataCall = self.emit.getCall(0);
     expect(dataCall.args[0]).to.equal('data');
     const message = dataCall.args[1];
-    expect(message).to.have.property('id');
+    expect(message).to.not.have.property('id');
     expect(message.body.lastPoll.startsWith('1970-01-01T00:00:00')).to.be.true;
     expect(message.body.fireTime).to.be.withinDate(new Date(0), new Date());
 
