@@ -1,6 +1,6 @@
 ## 1.3.0 (March 05, 2026)
 
-* **Major Refactoring**: Removed `elasticio-node` (v0.0.9) dependency; implemented simplified internal message creation (only `body` and `headers` fields).
+* Removed legacy `elasticio-node` dependency and transitioned to local utilities
 * **Modernized Runtime**: Updated Node.js engine from **18.x** to **24.x**.
 * **Dependency Upgrades**:
     * `elasticio-sailor-nodejs`: 2.7.1 -> 2.7.8
