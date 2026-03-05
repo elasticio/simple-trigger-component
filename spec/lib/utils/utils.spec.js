@@ -20,4 +20,22 @@ describe('Utils', async () => {
       }
     });
   });
+
+  describe('newMessageWithBody', () => {
+    it('should create a valid message object', () => {
+      const body = { foo: 'bar' };
+      const result = utils.newMessageWithBody(body);
+      expect(result).to.have.property('body').that.deep.equals(body);
+      expect(result).to.have.property('headers').that.is.an('object').and.empty;
+      expect(result).to.not.have.property('id');
+    });
+  });
+
+  describe('newEmptyMessage', () => {
+    it('should create an empty message object', () => {
+      const result = utils.newEmptyMessage();
+      expect(result).to.have.property('body').that.is.an('object').and.empty;
+      expect(result).to.have.property('headers').that.is.an('object').and.empty;
+    });
+  });
 });
